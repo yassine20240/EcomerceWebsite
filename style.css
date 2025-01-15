@@ -13,8 +13,7 @@
 }
 
 header {
-  background:#dee0e9;
- 
+  background: #dee0e9;
 }
 
 .nav button {
@@ -22,7 +21,7 @@ header {
 }
 
 .nav {
-    /* position: fixed; */
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,11 +76,6 @@ header {
   .menu ul li {
     margin: 10px 0;
   }
-
-
-  
-
-
 }
 
 header .nav button {
@@ -126,44 +120,37 @@ li {
     😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
   */
 
-
-
 .contain {
   background-image: url(./logo/hero4.png);
   width: 100%;
-/* margin-top: 0.01rem; */
+  /* margin-top: 0.01rem; */
   height: 88vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
- 
- 
 
-.text-principale{
-    padding-left: var(--pl);
-    padding-right: var(--pr);
- display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
+.text-principale {
+  padding-left: var(--pl);
+  padding-right: var(--pr);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 .text-principale h1 {
   font-size: 3rem;
   font-family: var(--font--principale);
-  
 }
 .text-principale span {
   color: #088178;
 }
 
 .text-principale p {
-
   font-family: var(--font--principale);
   font-size: 1.5rem;
-
 }
 
 /* ====================================================== */
@@ -176,7 +163,6 @@ text-align: center;
   font-family: var(--font--principale);
   font-size: 1.4rem;
   cursor: pointer;
-  
 }
 .cool_button::before {
   content: "";
@@ -186,7 +172,7 @@ text-align: center;
   width: 0%;
   height: 100%;
   transition: all 0.9s ease-in-out;
-  background:#08817986;
+  background: #08817986;
   z-index: 100;
 }
 
@@ -194,28 +180,63 @@ text-align: center;
   width: 100%;
 }
 
-
- /* 
+/* 
 😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
 😄   Everything is going great! 😄
 😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-*/  
-.benefits{
- display: flex;
-padding-left: var(--pl);
-padding-right: var(--pr);
-justify-content: space-between;
-padding-top: 2rem;
-flex-wrap: wrap;
+*/
+.benefits {
+  display: flex;
+  padding-left: var(--pl);
+  padding-right: var(--pr);
+  justify-content: space-between;
+  padding-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.benefit{
-    margin-top: 2rem;
-    min-width: 15%;
-    border: 2px black solid;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+.benefit {
+  margin-top: 2rem;
+  min-width: 15%;
+  border: 2px rgba(0, 217, 255, 0.363) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.benefit button {
+  cursor: pointer;
+  background: var(--bg-nav);
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  border: none;
+  color: var(--bg-nav);
+  background: var(--bg-body);
 }
 
+.item2 button {
+  background: rgba(231, 85, 219, 0.616);
+}
+.item3 button {
+  background: rgba(52, 221, 18, 0.644);
+}
+.item4 button {
+  background: rgba(0, 217, 255, 0.349);
+}
+.item5 button {
+  background: rgba(197, 13, 173, 0.411);
+}
+.item6 button {
+  background: rgba(255, 123, 0, 0.452);
+}
+
+@media screen and (max-width: 600px) {
+  .benefit {
+    min-width: 45%;
+  }
+}
+/* 
+😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
+😄   Everything is going great! 😄
+😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
+*/
