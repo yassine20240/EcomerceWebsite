@@ -15,13 +15,12 @@
 header {
   background: #dee0e9;
 }
-
+/* ==================nav--menu============================ */
 .nav button {
   display: none;
 }
 
 .nav {
-  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,12 +100,12 @@ header .nav button {
   transition: color 0.3s;
 }
 
-i {
+.nav i {
   font-size: 24px;
   border: none;
 }
 
-i:hover {
+.nav i:hover {
   color: var(--bg-nav);
 }
 
@@ -114,14 +113,11 @@ li {
   margin-left: 1.4rem;
 }
 
-/* 
-    😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-    😄   Everything is going great! 😄
-    😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-  */
+/* ==================contain============================ */
+
 
 .contain {
-  background-image: url(./logo/hero4.png);
+  background-image: url(./images/hero4.png);
   width: 100%;
   /* margin-top: 0.01rem; */
   height: 88vh;
@@ -159,7 +155,7 @@ li {
   background: transparent;
   margin: 1rem 0;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid black;
   font-family: var(--font--principale);
   font-size: 1.4rem;
   cursor: pointer;
@@ -179,12 +175,9 @@ li {
 .cool_button:hover::before {
   width: 100%;
 }
+ 
+/* ==================benefits============================ */
 
-/* 
-😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-😄   Everything is going great! 😄
-😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-*/
 .benefits {
   display: flex;
   padding-left: var(--pl);
@@ -192,18 +185,21 @@ li {
   justify-content: space-between;
   padding-top: 2rem;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .benefit {
+  text-align: center;
+  box-shadow: var(--bg-body) 2px 2px 2px;
   margin-top: 2rem;
+  border: 1px solid #088178;
   min-width: 15%;
-  border: 2px rgba(0, 217, 255, 0.363) solid;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
- 
+
 .benefit button {
   cursor: pointer;
   background: var(--bg-nav);
@@ -235,8 +231,309 @@ li {
     min-width: 45%;
   }
 }
-/* 
-😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-😄   Everything is going great! 😄
-😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-*/
+@media screen and (max-width: 320px) {
+  .benefit {
+    min-width: 99%;
+  }
+}
+/* ==================text--products  product============================ */
+
+.text--products {
+  padding-left: var(--pl);
+  padding-right: var(--pr);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.products--clothes .text--products h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: var(--font--principale);
+}
+.products--clothes .text--products p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: var(--font--principale);
+}
+
+.products {
+  padding-left: var(--pl);
+  padding-right: var(--pr);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item--pro {
+  border: 1px solid #0881798a;
+  min-width: 31%;
+  width: 250px;
+  padding: 0.4rem 0.4rem;
+  margin-top: 2rem;
+}
+
+.item--pro img {
+  width: 100%;
+}
+.item--pro h4 {
+  padding: 0.5rem 0;
+  font-size: 22px;
+}
+
+.item--pro .stars i {
+  color: gold;
+  font-size: 16px;
+
+  overflow: hidden;
+}
+
+.item--pro p {
+  font-size: 20px;
+  font-family: var(--font--principale);
+  letter-spacing: 2px;
+}
+.item--pro {
+  color: var(--bg-nav);
+  font-size: 15px;
+  font-weight: 700;
+}
+.flex--shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex--shop i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.flex--shop i:hover {
+  font-size: 20px;
+  cursor: pointer;
+  color: gold;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .item--pro {
+    border: 1px solid #0881798a;
+    min-width: 98%;
+    width: 250px;
+    padding: 1rem 0.2rem;
+  }
+
+  .item--pro img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .item--pro {
+    border: 1px solid #0881798a;
+    min-width: 45%;
+    width: 250px;
+    padding: 1rem 0.4rem;
+  }
+
+  .item--pro img {
+    width: 100%;
+  }
+}
+
+/* =============== finish the products list  discount ============================ */
+
+.discount {
+  text-align: center;
+  background-image: url(./images/pexels-karolina-grabowska-5632402.jpg);
+  width: 100vw;
+  margin-top: 3rem;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.discount_article {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.discount h2 {
+  width: 80%;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.discount h2 span {
+  color: #1bd6e4;
+}
+.discount button {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  border: 1px black solid;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.discount button:hover {
+  background-color: var(--bg-nav);
+}
+
+/* ============finish discount   images-dis ===================================== */
+.images-dis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 1rem;
+}
+
+.itemone {
+  height: 50vh;
+  width: 48%;
+
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-image: url(./images/b1.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemtwo {
+  height: 50vh;
+  width: 48%;
+  display: flex;
+
+  background-size: cover;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-image: url(./images/b18.jpg);
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+@media screen and (max-width: 700px) {
+  .itemone {
+    width: 99%;
+  }
+
+  .itemtwo {
+    width: 99%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .itemone {
+    height: 30vh;
+  }
+
+  .itemtwo {
+    height: 30vh;
+  }
+}
+
+.images-dis h1 {
+  color: var(--bg-body);
+  padding: 0.5rem 0;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* ==================contact ======================= */
+
+.contact {
+  margin-top: 2rem;
+  background-color: var(--bg-nav);
+
+  padding: 2rem 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contactone {
+  margin-top: 0.5rem;
+}
+.contactone p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contactone p .fix {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.contactwo {
+  text-align: center;
+}
+.contactwo input,
+textarea {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--bg-nav);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contactwo button {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  border: 1px black solid;
+  text-transform: capitalize;
+  font-family: var(--font--principale);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contactwo button:hover {
+  background: var(--bg-body);
+  color: #333;
+}
+
+@media screen and (max-width: 870px) {
+  .contact {
+    margin-top: 2rem;
+    background-color: var(--bg-nav);
+
+    padding: 2rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }.contactone p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+
+  
